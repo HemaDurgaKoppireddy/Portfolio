@@ -1,4 +1,4 @@
-/* CSS Variables and Global Styles */
+
 :root {
     --primary-color: #0F172A;
     --secondary-color: #1E293B;
@@ -8,7 +8,7 @@
     --font-family: 'Inter', sans-serif;
 }
 
-/* Basic Reset */
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -31,13 +31,13 @@ body {
     padding-right: 1.5rem;
 }
 
-/* Scrollbar */
+
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--primary-color); }
 ::-webkit-scrollbar-thumb { background: var(--accent-color); border-radius: 10px; }
 ::-webkit-scrollbar-thumb:hover { background: #F59E0B; }
 
-/* Header */
+
 #header {
     position: fixed;
     top: 0;
@@ -114,7 +114,7 @@ body {
     }
 }
 #mobile-menu {
-    display: none; /* Controlled by JS */
+    display: none; 
     background-color: var(--secondary-color);
 }
 #mobile-menu a {
@@ -128,7 +128,7 @@ body {
     color: #fff;
 }
 
-/* Main Content & Sections */
+
 main, footer {
     position: relative;
     z-index: 1;
@@ -142,7 +142,7 @@ section {
     padding-bottom: 5rem;
 }
 
-/* Hero Section */
+
 #home {
     min-height: 100vh;
     display: flex;
@@ -283,7 +283,7 @@ section {
     height: 100%;
 }
 
-/* Section Titles */
+
 .section-title {
     font-size: 2.25rem;
     font-weight: 700;
@@ -294,10 +294,10 @@ section {
     color: var(--accent-color);
 }
 
-/* About Section */
+
 .about-container {
     margin-top: 3rem;
-    max-width: 56rem; /* 896px */
+    max-width: 56rem; 
     margin-left: auto;
     margin-right: auto;
 }
@@ -323,7 +323,7 @@ section {
     color: var(--subtle-text);
 }
 
-/* New Skills Section */
+
 #skills .skills-container {
     margin-top: 3rem;
     display: flex;
@@ -434,7 +434,7 @@ section {
     color: var(--subtle-text);
 }
 
-/* Projects Section */
+
 .projects-grid {
     margin-top: 3rem;
     display: grid;
@@ -508,7 +508,7 @@ section {
     border-radius: 9999px;
 }
 
-/* Contact Section */
+
 .contact-form-wrapper {
     margin-top: 3rem;
     max-width: 36rem;
@@ -561,7 +561,7 @@ section {
     text-decoration: underline;
 }
 
-/* Footer */
+
 footer {
     background-color: var(--secondary-color);
 }
@@ -604,14 +604,14 @@ footer {
     height: 1.5rem;
 }
 
-/* Animation Keyframes */
+
 @keyframes floatAnimation {
     0% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0); }
 }
 
-/* Fade In Animation on Scroll */
+
 .fade-in-section {
     opacity: 0;
     transform: translateY(20px);
@@ -622,7 +622,7 @@ footer {
     transform: translateY(0);
 }
 
-/* Bubble Animation */
+
 #background-animation {
     position: fixed;
     top: 0;

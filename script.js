@@ -1,4 +1,4 @@
-// Mobile Menu Toggle
+
 const mobileMenuButton = document.getElementById('mobile-menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
 mobileMenuButton.addEventListener('click', () => {
@@ -6,7 +6,7 @@ mobileMenuButton.addEventListener('click', () => {
     mobileMenu.style.display = isHidden ? 'block' : 'none';
 });
 
-// Close mobile menu when a link is clicked
+
 const mobileLinks = mobileMenu.getElementsByTagName('a');
 for (let link of mobileLinks) {
     link.addEventListener('click', () => {
@@ -14,7 +14,7 @@ for (let link of mobileLinks) {
     });
 }
 
-// Header shadow on scroll
+
 const header = document.getElementById('header');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
@@ -24,13 +24,13 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Intersection Observer for fade-in animations
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('is-visible');
 
-            // Animate skill bars if the skills section is visible
+            
             if (entry.target.id === 'skills') {
                 const progressFills = entry.target.querySelectorAll('.progress-fill');
                 progressFills.forEach(fill => {
@@ -48,9 +48,9 @@ document.querySelectorAll('.fade-in-section').forEach(section => {
     observer.observe(section);
 });
 
-// Background Bubble Animation
+
 document.addEventListener('DOMContentLoaded', () => {
-    if (window.innerWidth > 768) { // Only run on larger screens
+    if (window.innerWidth > 768) { 
         const container = document.getElementById('background-animation');
         if(container){
             const bubbleCount = 20;
@@ -58,9 +58,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 const bubble = document.createElement('div');
                 bubble.classList.add('bubble');
                 
-                const size = Math.random() * 40 + 10; // 10px to 50px
+                const size = Math.random() * 40 + 10; 
                 const left = Math.random() * 100;
-                const duration = Math.random() * 10 + 15; // 15s to 25s
+                const duration = Math.random() * 10 + 15; 
                 const delay = Math.random() * 15;
 
                 bubble.style.width = `${size}px`;
